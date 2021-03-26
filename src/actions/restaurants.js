@@ -14,3 +14,12 @@ export const deleteRestaurant = restaurantId => {
       id: restaurantId
    };
 };
+
+
+export const updateRestaurant = restaurant => {
+   return {
+      type: "UPDATE_RESTAURANT",
+      text: restaurant.text,
+      id: restaurant.id
+   };
+};

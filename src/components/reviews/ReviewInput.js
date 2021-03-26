@@ -32,9 +32,6 @@ class ReviewInput extends Component {
     return (
       <div>
         Review Input
-        {/* 1) has two text input fields, one for review input, and another for submitting
-            2) has an initial state with text key set to empty string
-            3) changes the component state with an onChange event */}
          <form className="review-form" onSubmit={this.handleOnSubmit} >
             <label>Add Review</label>
             <input type="text" value={this.state.text} onChange={this.handleOnChange} />
